@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EFE6E4;
+    color: #533738;
+}
+
+a {
+    text-decoration: none;
+    color: #533738;
+}
+h1 {
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.request-heading, .request p {
+    color: #ffffff;
+}
+
+.nav-item li {
+    display: inline-block;
+}
+.nav-item .tel {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #533738;
+}
+
+.advantages {
+    list-style: none;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.advantages span {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px;
+}
+
+.main-heading {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 62px; 
+}
+
+.howwework li {
+    font-size: 18px;
+    line-height: 30px;
+    list-style: none;
+}
+
+.button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    width: 309px;
+    height: 74px;
+    background-color: #CC8B86
+}
+.promo .button {
+    text-align: center;
+}
+
+.request .button {
+    color: #533738;
+    border: none;
+}
+
+.work-shadow {
+background-image: url(img/work-shadow.jpg);
+width: 488px;
+height: 451px;
+}
+
+.see-more p {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    display: inline-block;
+}
+
+.main-footer .info {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;        
+}
+
+.ip-info {
+    float: right;
+}
+
