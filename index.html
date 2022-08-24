@@ -7,11 +7,9 @@
 </head>
 <body>
     <header class="page-header">
-        <div class="header-container"> 
-            <!-- Картинку лампы лучше выгружать в png (растр), но она отображается размытой, поэтому выгрузила весь блок в svg -->
-            <img class="logo" src="img/scandi-logo.svg" width="91" height="25" alt="Scandi, Логотип в форме лампы.">
-        <nav class="nav-item"> 
-            <ul>
+        <img class="logo" src="img/scandi-logo.svg" width="91" height="25" alt="Scandi, Логотип в форме лампы.">
+        <nav class="navigation"> 
+            <ul class="nav-items">
                 <li><a href="#about">О компании</a></li>
                 <li><a href="#portfolio">Портфолио</a></li>
                 <li><a href="#team">Команда</a></li>
@@ -20,30 +18,25 @@
                 <li><a href="#request">Оставить заявку</a></li>                
             </ul>
         </nav>        
-        <a class="tel" href="tel:+79818574624">+7 (981) 857-46-24</a>
-        </div>
+        <a class="tel" href="tel:+79818574624">+7 (981) 857-46-24</a>       
     </header>
-    <main> 
+    <main>
        <section class="promo">
-            <img class="main-photo" src="img/main-photo.jpg" width="1400" height="715" alt=" ">
-        <div> 
-            <h1>Поможем сделать вашу квартиру уютнее</h1>
-            <p class="description">Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>                           
-        </div>
-        <div class="button"><a href="#request">Оставить заявку</a>
-        </div>
+            <h1 class="main-heading">Поможем сделать вашу квартиру уютнее</h1>
+            <p>Подбираем текстиль, мебель и аксессуары под ваш интерьер, находим магазины и помогаем организовать доставку</p>                           
+            <div class="button"><a class="promo-button" href="#request">Оставить заявку</a> </div>
         </section>         
         <article id="about">
             <h2>О нас</h2>
-            <section>
-                <!-- Здесь вместо img будем исп-ть класс с background-image -->
-                <img src="img/about-photo.jpg" width="444" height="465" alt=" ">
-             <div>
-                <p class="description">Премиальный европейский текстиль &#8212; одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям &#8212; вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
-                <p class="description">Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: <q>Да! Это именно то, что действительно достойно моего дома!</q></p>
-             </div>
-            </section>            
-               <ul class="advantages">
+            <section class="about">
+               <div class="about-photo"></div>
+               <div class="about-description">            
+                <p>Премиальный европейский текстиль &#8212; одно из самых главных направлений работы коллектива. Создавать неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям &#8212; вот то,  что по-настоящему вдохновляет дизайнеров нашей студии.</p>
+                <p>Наш коллектив сделает все, чтобы после сотрудничества с нами,  Вам было приятно сказать: <q>Да! Это именно то, что действительно достойно моего дома!</q></p>
+               </div>
+            </section> 
+            <section class="advantages">           
+               <ul class="advantages-list">
                  <li>
                     <span>5</span><br>
                     лет опыта
@@ -57,25 +50,26 @@
                     наград
                  </li>        
                <ul>
+            </section>
         </article>
-        <article id="portfolio">
+        <article class="portfolio" id="portfolio">
             <h2>Наши работы</h2>
+            <section class="gallery">
             <div class="work-shadow">
                 <h3>Квартира-студия<br>
                 30 кв.м.</h3>
-                <p class="description">В квартире были светлые стены и тёплые цвета. Мы сконцентрировались на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+                <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались<br> на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
             </div>
             <img src="img/work1.jpg" width="692" height="451" alt="Кухня в сткандинавском стиле с островной рабочей поверхностью в бело-коричневых тонах.">
             <img src="img/work2.jpg" width="692" height="451" alt="Светлая гостиная с зеленым диваном и множеством растений.">
             <img src="img/work3.jpg" width="488" height="451" alt="Светлая ванная комната с отдельно стоящей овальной ванной и высокой пальмой в углу.">
-            <a class="see-more">
-                <p>Смотреть ещё</p><img src="img/arrow.svg" width="61" height="16" alt="Перейти далее.">
+            </section>
+            <a href="#" class="see-more">Смотреть ещё <img src="img/arrow.svg" width="61" height="16" alt="Перейти далее.">
             </a>
         </article>
-        <article>
-           <section id="team">
-               <h2>Команда</h2>
-             <div class="team">
+        <article class="team" id="team">
+           <h2>Команда</h2>
+           <section class="team-container">                            
                 <figure>
                     <img src="img/person1.jpg" width="320" height="253" alt="Маша.">
                      <figcaption class="description">Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается и помогает сделать вашу квартиру красивой и уютной.
@@ -86,64 +80,63 @@
                     <figcaption class="description">С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все документы и ответит на все вопросы.
                     </figcaption>
                 </figure>
-                <figure>
+                <figure class="howwework-person3">
                     <img src="img/person3.jpg" width="320" height="253" alt="Катя.">
                     <figcaption class="description">Катя тоже занимается дизайном. Она всегда находит общий язык с клиентами и точно знает, как обустроить дом так, чтобы вам понравилось.
                     </figcaption>
-                </figure>
-             </div>
+                </figure>             
             </section>  
          <section id="hwwework">    
             <h2>Как мы работаем</h2>
             <ul class="howwework">
                 <li><img src="img/1.svg" width="70" height="70" alt="Во-первых."><br>
-                Знакомимся, выезжаем на объект, утверждаем концепцию, подписываем договор.</li>
+                Знакомимся, выезжаем<br>на объект, утверждаем<br> концепцию, подписываем<br> договор.</li>
                 <li><img src="img/2.svg" width="70" height="70" alt="Во-вторых."><br>
-                Подбираем мебель, текстиль, аксессуары. Делаем 3D-визуализацию.</li>
+                Подбираем мебель, текстиль,<br> аксессуары. Делаем 3D-<br>визуализацию.</li>
                 <li><img src="img/3.svg" width="70" height="70" alt="В-третьих."><br>
-                Находим нужные магазины, помогаем с доставкой и оплатой товаров.</li>
-                <li><img src="img/4.svg" width="70" height="70" alt="В-четвертых."><br>
-                Воплощаем проект в жизнь: расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
+                Находим нужные магазины,<br> помогаем с доставкой<br> и оплатой товаров.</li>
+                <li class="howwework-point4"><img src="img/4.svg" width="70" height="70" alt="В-четвертых."><br>
+                Воплощаем проект в жизнь:<br> расставляем мебель и цветы,<br> вешаем шторы, находим<br> места для мелочей.</li>
             </ul>
          </section>
         </article>
         <article id="feedback">
             <h2>Отзывы</h2>
-            <button><img src="img/arrow-left.svg" width="72" height="72" alt="Назад."></button>
-            <section>
-              <div class="description"> 
+            <section class="feedback">            
+              <button class="arrow"><img src="img/arrow-left.svg" width="72" height="72" alt="Назад."></button>
+              <div class="feedback1"> 
                 <p >&laquo;Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.</p>
                 <p>Работа шла быстро, было очень приятно общаться и взаимодествовать с сотрудниками. Не ожидала, что это будет так легко</p>
                 <p>Буду советовать и своим друзьям к вам обращаться!&raquo;</p>
                 <p>АННА БЕЛОВСКАЯ</p>
               </div>
               <div>
-                <img src="img/feedback1.jpg" width="407" height="272" alt="Солнечная гостиная Анны в светлых тонах с большим окном.">
+                <img class="feedback-photo1" src="img/feedback1.jpg" width="407" height="272" alt="Солнечная гостиная Анны в светлых тонах с большим окном."> <br>
                 <img src="img/feedback2.jpg" width="407" height="272" alt="Кухня Анны в коричневых тонах с панорамным окном.">
               </div>
+              <button class="arrow"><img src="img/arrow-right.svg" width="72" height="72" alt="Далее."></button>
             </section>
-            <button><img src="img/arrow-right.svg" width="72" height="72" alt="Далее."></button>
+            
         </article>
-        <article>                                                                           
-            <section class="request" id="request">
+        <article id="request" class="contacts">                                                                           
+            <section class="request">
                <h2 class="request-heading">Оставить заявку</h2>
-                    <form action="#" method="post">
-                         <p>Оставьте свои контакты. Менеджер перезвонит в удобное вам время и ответит на все вопросы.</p>
-                         <input type="text" required="required" placeholder="Ваше имя"><br>                        
-                         <input type="tel" required="required" placeholder="Введите телефон"><br>
-                         <input class="button" type="submit" value="Оставить заявку">
+                    <form class="form" action="#" method="post">
+                         <p>Оставьте свои контакты. Менеджер перезвонит<br> в удобное вам время и ответит на все вопросы.</p>
+                         <input class="form-line1" type="text" required="required" placeholder="Ваше имя"><br>                        
+                         <input class="form-line2" type="tel" required="required" placeholder="Введите телефон"><br>
+                         <input class="button request-button" type="submit" value="Оставить заявку">
                     </form>
             </section>
-            <!-- Я бы не стала указывать alt, тк потом в футере адрес офиса будет озвучен. -->
             <img class="map" src="img/map.jpg" width="590" height="624" alt="Адрес офиса на карте по адресу город Санкт-петербург, улица Большая Конюшенная, дом 19.">
         </article>
     </main>
     <footer class="main-footer">                                                                                                                
-      <div class="info">
-        <a class="tel-footer" href="tel:+79818574624">+7 (981) 857-46-24</a>
+      <div>
+        <a href="tel:+79818574624">+7 (981) 857-46-24</a>
         г. Санкт-петербург, ул. Большая Конюшенная, 19
       </div>
-      <div class="ip-info">ИП Королёва А.А.</div>
+      <div>ИП Королёва А.А.</div>
     </footer>
 </body>
 </html>
